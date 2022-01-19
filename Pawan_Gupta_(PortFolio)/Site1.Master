@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Pawan_Gupta__PortFolio_.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Pawan Gupta</title>
+    <link href="Bootstrap/CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="StyleSheet/style.css" rel="stylesheet" />
+    <link href="Fontawesome/css/all.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <script src="Bootstrap/JS/bootstrap.bundle.min.js"></script>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-lg py-4 px-5" style="background-color:white">
+                <a class="navbar-brand" href="AboutMe.aspx" style="color:black;">
+                    <p><b><big>Pawan Gupta</big></b> / Web Developer</p>
+
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto ">
+
+                        </ul>
+                    
+                    <ul class="navbar-nav px-5">
+                        <li class="nav-item active px-4">
+                            <asp:LinkButton class="nav-link" ID="aboutme" runat="server" ForeColor="Black" OnClick="aboutme_Click">ABOUT ME</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active px-4">
+                            <asp:LinkButton class="nav-link" ID="resume" runat="server" ForeColor="Black" OnClick="resume_Click" >RESUME</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active px-4">
+                            <asp:LinkButton class="nav-link" ID="projects" runat="server" ForeColor="Black" OnClick="projects_Click">PROJECTS</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active px-4">
+                            <asp:LinkButton class="nav-link" ID="contactme" runat="server" ForeColor="Black" OnClick="contactme_Click">CONTACT</asp:LinkButton>  
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </nav>   
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <footer class="container-fluid py-4 px-5" style="background-color:white;" >
+    <div class="col-xs-12 col-sm-12 col-md-12">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6 my-2">
+          <p>©  2022 - by Pawan Gupta</p>
+        </div>
+          <div class="col-2 text-center">
+          <h6>Call</h6>
+              <a href="tel:+917977215555" style="color:black; text-decoration:none !important;">+(91) 7977215555</a>
+        </div>
+          <div class="col-2 text-center">
+              <h6>Write</h6>
+              <a href="mailto:eduhill@gmail.com" style="color:black; text-decoration:none !important;">pawanrocks5050@gmail.com</a>
+        </div>
+          <div class="col-2 text-center">
+              <h6>Follow</h6>
+              <a style="color: black;" class="p-1" href="https://www.instagram.com/__.mr._.stud.__/"><i class="fab fa-2x fa-instagram"></i></a>
+              <a style="color: black;" class="p-1" href="https://twitter.com/Pawangupta5050"><i class="fab fa-2x fa-twitter"></i></a>
+              <a style="color: black;" class="p-1" href="https://www.linkedin.com/in/pawangupta20/"><i class="fab fa-2x fa-linkedin"></i></a>
+              <a style="color: black;" class="p-1" href="https://github.com/pawangupta5050"><i class="fab fa-2x fa-github"></i></a>
+            
+            
+        </div>
+      </div>
+    </div>
+        </div>
+  </footer>
+
+        </div>
+    </form>
+</body>
+</html>
